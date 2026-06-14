@@ -25,11 +25,5 @@ from flask_mysqldb import MySQL
 
 app = Flask(__name__)
 
-# --- RELATIONAL STORAGE ENVIRONMENT MAPPINGS ---
-app.config['MYSQL_HOST'] = 'localhost'       # Database server network location
-app.config['MYSQL_USER'] = 'root'            # Administrative access privilege user
-app.config['MYSQL_PASSWORD'] = 'root'        # Access authorization credential key
-app.config['MYSQL_DB'] = 'vacc_tracker'      # Targeted operational workspace schema
-
 # Instantiate the global MySQL gateway attachment object
 mysql = MySQL(app)
